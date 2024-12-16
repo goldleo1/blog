@@ -4,6 +4,10 @@ const postsCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     published: z.date(),
+<<<<<<< HEAD
+=======
+    updated: z.date().optional(),
+>>>>>>> 9105ad7dff2fdfd9df64929ca5f6e364141784b1
     draft: z.boolean().optional().default(false),
     description: z.string().optional().default(''),
     image: z.string().optional().default(''),

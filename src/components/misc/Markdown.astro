@@ -7,7 +7,11 @@ interface Props {
 }
 const className = Astro.props.class
 ---
+<<<<<<< HEAD
 <div data-pagefind-body class=`prose dark:prose-invert prose-base max-w-none custom-md ${className}`>
+=======
+<div data-pagefind-body class=`prose dark:prose-invert prose-base !max-w-none custom-md ${className}`>
+>>>>>>> 9105ad7dff2fdfd9df64929ca5f6e364141784b1
     <!--<div class="prose dark:prose-invert max-w-none custom-md">-->
     <!--<div class="max-w-none custom-md">-->
     <slot/>
@@ -64,6 +68,7 @@ const className = Astro.props.class
     observer.observe(document.body, { childList: true, subtree: true });
   }
 </script>
+<<<<<<< HEAD
 
 <!-- Styles for copy-code-button -->
 <style lang="css" is:global>
@@ -489,3 +494,5 @@ const className = Astro.props.class
     }
 
 </style>
+=======
+>>>>>>> 9105ad7dff2fdfd9df64929ca5f6e364141784b1

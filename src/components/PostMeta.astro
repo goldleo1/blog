@@ -8,11 +8,21 @@ import { url } from '../utils/url-utils'
 interface Props {
   class: string
   published: Date
+<<<<<<< HEAD
   tags: string[]
   category: string
   hideTagsForMobile?: boolean
 }
 const { published, tags, category, hideTagsForMobile = false } = Astro.props
+=======
+  updated?: Date
+  tags: string[]
+  category: string
+  hideTagsForMobile?: boolean
+  hideUpdateDate?: boolean
+}
+const { published, updated, tags, category, hideTagsForMobile = false, hideUpdateDate = false } = Astro.props
+>>>>>>> 9105ad7dff2fdfd9df64929ca5f6e364141784b1
 const className = Astro.props.class
 ---
 
@@ -26,6 +36,20 @@ const className = Astro.props.class
         <span class="text-50 text-sm font-medium">{formatDateToYYYYMMDD(published)}</span>
     </div>
 
+<<<<<<< HEAD
+=======
+    <!-- update date -->
+    {!hideUpdateDate && updated && updated.getTime() !== published.getTime() && (
+        <div class="flex items-center">
+            <div class="meta-icon"
+            >
+                <Icon name="material-symbols:edit-calendar-outline-rounded" class="text-xl"></Icon>
+            </div>
+            <span class="text-50 text-sm font-medium">{formatDateToYYYYMMDD(updated)}</span>
+        </div>
+    )}
+
+>>>>>>> 9105ad7dff2fdfd9df64929ca5f6e364141784b1
     <!-- categories -->
     <div class="flex items-center">
         <div class="meta-icon"
@@ -59,6 +83,7 @@ const className = Astro.props.class
             {!(tags && tags.length > 0) && <div class="transition text-50 text-sm font-medium">{i18n(I18nKey.noTags)}</div>}
         </div>
     </div>
+<<<<<<< HEAD
 </div>
 
 <style>
@@ -75,3 +100,6 @@ const className = Astro.props.class
     }
 }
 </style>
+=======
+</div>
+>>>>>>> 9105ad7dff2fdfd9df64929ca5f6e364141784b1

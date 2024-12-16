@@ -20,6 +20,13 @@ export type SiteConfig = {
       url?: string
     }
   }
+<<<<<<< HEAD
+=======
+  toc: {
+    enable: boolean
+    depth: 1 | 2 | 3
+  }
+>>>>>>> 9105ad7dff2fdfd9df64929ca5f6e364141784b1
 
   favicon: Favicon[]
 }

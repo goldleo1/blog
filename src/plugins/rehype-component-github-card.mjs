@@ -73,7 +73,11 @@ export function GithubCardComponent(properties, children) {
         if (data.license?.spdx_id) {
           document.getElementById('${cardUuid}-license').innerText = data.license?.spdx_id
         } else {
+<<<<<<< HEAD
           document.getElementById('${cardUuid}-license').classList.add = "no-license"
+=======
+          document.getElementById('${cardUuid}-license').innerText = "no-license"
+>>>>>>> 9105ad7dff2fdfd9df64929ca5f6e364141784b1
         };
           document.getElementById('${cardUuid}-card').classList.remove("fetch-waiting");
           console.log("[GITHUB-CARD] Loaded card for ${repo} | ${cardUuid}.")
