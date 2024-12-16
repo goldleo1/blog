@@ -8,11 +8,7 @@ let delay = 0
 const interval = 50
 ---
 <div class="transition flex flex-col rounded-[var(--radius-large)] bg-[var(--card-bg)] py-1 md:py-0 md:bg-transparent md:gap-4 mb-4">
-<<<<<<< HEAD
-    {page.data.map((entry: { data: { draft: boolean; title: string; tags: string[]; category: string; published: Date; image: string; description: string; }; slug: string; }) => {
-=======
     {page.data.map((entry: { data: { draft: boolean; title: string; tags: string[]; category: string; published: Date; image: string; description: string; updated: Date; }; slug: string; }) => {
->>>>>>> 9105ad7dff2fdfd9df64929ca5f6e364141784b1
         return (
             <PostCard
                     entry={entry}
@@ -20,10 +16,7 @@ const interval = 50
                     tags={entry.data.tags}
                     category={entry.data.category}
                     published={entry.data.published}
-<<<<<<< HEAD
-=======
                     updated={entry.data.updated}
->>>>>>> 9105ad7dff2fdfd9df64929ca5f6e364141784b1
                     url={getPostUrlBySlug(entry.slug)}
                     image={entry.data.image}
                     description={entry.data.description}
