@@ -5,7 +5,7 @@ description: ""
 image: ""
 tags: [web, mysql]
 category: "web"
-draft: true
+draft: false
 lang: ""
 ---
 

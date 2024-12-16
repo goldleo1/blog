@@ -5,7 +5,7 @@ description: "yisf finals writeup"
 image: ""
 tags: [yisf, writeup]
 category: "writeup"
-draft: true
+draft: false
 lang: "ko"
 ---
 
