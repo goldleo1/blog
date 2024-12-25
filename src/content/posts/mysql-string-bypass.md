@@ -1,7 +1,7 @@
 ---
 title: mysql-string-bypass
 published: 2024-10-17
-description: ""
+description: "Character Set and etc."
 image: ""
 tags: [web, mysql]
 category: "web"

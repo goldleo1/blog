@@ -4,7 +4,7 @@
 
 **NAME** : 박진완 / Park Jinwan
 
-**TEAM** : D4
+**TEAM** : Deadsec
 
 **EDUCATION** :
 
