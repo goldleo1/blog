@@ -44,7 +44,7 @@ lang: ""
 
 ```
 "test\test" -> test	    test
-"test\Test" -> testTtest
+"test\Test" -> testTest
 "asdf'asdf" -> asdf'asdf
 'qwer''qwer' -> qwer'qwer
 'asdf\Xadsf' -> asdfXasdf ! 메인 아이디어
